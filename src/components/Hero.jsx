@@ -18,7 +18,7 @@ const Hero = () => {
                             initial="hidden"
                             animate="visible"
                             className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl">
-                            Shaurya Pratap Singh
+                            Harsh Agrawal
                         </motion.h1>
 
                         <motion.span
@@ -33,7 +33,7 @@ const Hero = () => {
                             variants={container(0.6)}
                             initial="hidden"
                             animate="visible"
-                            className="my-2 max-w-xl py-6 font-light">
+                            className="my-2 max-w-4xl py-6 font-light">
                             {HERO_CONTENT}
                         </motion.p>
                     </div>

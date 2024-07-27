@@ -96,7 +96,7 @@ const Contact = () => {
                 <div className="text-center">
                   <button
                     type="submit"
-                    className="inline-block px-5 py-2.5 rounded-md text-lg font-bold cursor-pointer select-none outline-none transition-all duration-500 focus:outline-none focus:ring-0 focus:ring-offset-0 hover:-translate-y-1.5 bg-purple-600 text-white w-1/6"
+                    className="inline-block px-5 py-2.5 rounded-md text-lg font-bold cursor-pointer select-none outline-none transition-all duration-500 focus:outline-none focus:ring-0 focus:ring-offset-0 hover:-translate-y-1.5 bg-purple-800 text-white-500 lg:w-1/6 sm:w-1/4"
                   >
                     SEND
                   </button>

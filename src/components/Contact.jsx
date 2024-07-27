@@ -89,7 +89,7 @@ const Contact = () => {
                   className="form-input"
                   placeholder="Enter your Message"
                   onChange={onChangeHandler}
-                  rows="7"
+                  rows="8"
                   value={data.message}
                 />
 

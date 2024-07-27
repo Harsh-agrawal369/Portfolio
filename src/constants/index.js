@@ -71,7 +71,4 @@ export const PROJECTS = [
 
 export const CONTACT = {
   intro : "I'd love to hear from you! Whether you have a question or just want to say hi.",
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
 };

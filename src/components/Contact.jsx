@@ -47,11 +47,11 @@ const Contact = () => {
     <div className="py-16">
       <div className="max-w-6xl mx-auto p-4 md:p-16 xl:p-20">
         <div className="lg-w-2/3 space-y-5 text-center mx-auto">
-          <h1 className="text-gray-800 uppercase tracking-widest dark:text-white font-medium text-4xl">
+          <h1 className="text-gray-800 uppercase tracking-widest text-white font-medium text-4xl">
             Get In Touch
           </h1>
           <div className="h-1 bg-purple-600 w-14 mx-auto"></div>
-          <p className="text-gray-400 dark:text-gray-300 text-base leading-6">
+          <p className="text-gray-400 text-gray-300 text-base leading-6">
             {CONTACT.intro}
           </p>
         </div>

@@ -70,5 +70,5 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  intro : "I'd love to hear from you! Whether you have a question or just want to say hi.",
+  intro : "I'd love to hear from you! Whether you have a question or just want to say hi.",   
 };

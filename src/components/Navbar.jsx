@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../assets/kevinRushLogo.png";
-import { FaEnvelope, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const Navbar = () => {
   return (
@@ -25,11 +25,11 @@ const Navbar = () => {
           <FaGithub />
         </a>
         <a
-          href={import.meta.env.VITE_INSTAGRAM_URL}
+          href={import.meta.env.VITE_LEETCODE_URL}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram />
+          <SiLeetcode />
         </a>
         <a
           href={`mailto:${import.meta.env.VITE_EMAIL}`}

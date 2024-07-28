@@ -16,7 +16,7 @@ const Hero = () => {
                             variants={container(0.2)}
                             initial="hidden"
                             animate="visible"
-                            className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl">
+                            className="pb-16 text-5xl font-thin tracking-tight lg:mt-16 lg:text-8xl">
                             Harsh Agrawal
                         </motion.h1>
 
@@ -24,7 +24,7 @@ const Hero = () => {
                             variants={container(0.4)}
                             initial="hidden"
                             animate="visible"
-                            className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
+                            className="bg-gradient-to-r text-4xl lg:pb-1 from-pink-300 via-slate-500 to-purple-500 bg-clip-text lg:text-5xl tracking-tight text-transparent ">
                             Software Engineer
                         </motion.span>
 
@@ -32,12 +32,12 @@ const Hero = () => {
                             variants={container(0.6)}
                             initial="hidden"
                             animate="visible"
-                            className="my-2 max-w-4xl py-6 font-light">
-                            {HERO_CONTENT}
+                            className="my-2 max-w-3xl py-6 font-light lg:text-lg">
+                            {HERO_CONTENT} 
                         </motion.p>
 
                         {/* Empty div only visible on large screens */}
-                        <div className="hidden lg:block h-56 w-full"></div>
+                        <div className="hidden lg:block h-48 w-full"></div>
                     </div>
                 </div>
                 {/* <div className="w-full lg:w-1/2 lg:p-8">

@@ -19,7 +19,7 @@ const About = () => {
         >
           <div className='flex items-center justify-center overflow-hidden'>
             <img 
-              className="rounded-2xl w-25/40 object-cover object-bottom h-96" 
+              className="rounded-2xl lg:w-25/40 w-5/5 object-cover object-bottom h-96" 
               src='/img1.png' 
               alt="About" 
             />

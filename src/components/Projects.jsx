@@ -16,7 +16,7 @@ const Projects = () => {
 
       <div>
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+          <div key={index} className="mb-8 flex flex-wrap lg:justify-center font-body-text">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
@@ -26,9 +26,9 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                width={150}
-                height={150}
-                className="mb-6 rounded"
+                width={220}
+                height={180}
+                className="mb-4 rounded mt-4"
               />
             </motion.div>
             <motion.div
@@ -43,7 +43,7 @@ const Projects = () => {
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
+                    className="mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-skills font-medium text-purple-600"
                   >
                     {tech}
                   </span>

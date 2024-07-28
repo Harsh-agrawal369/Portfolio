@@ -1,7 +1,9 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
+import project6 from "../assets/projects/project-6.png";
 
 export const HERO_CONTENT = `Building the future, one line of code at a time. As a Software Engineering Student, I turn complex problems into elegant solutions, leveraging cutting-edge technologies and innovative thinking. Let's code the future together.`;
 
@@ -29,30 +31,45 @@ export const PROJECTS = [
     title: "BiteJoy: Food Delivery Website",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A fully functional online food delivery website with features like food listing, shopping cart, payment gateway, and user authentication.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "Prisma", "JWT", "Stripe"],
   },
   {
-    title: "Task Management App",
+    title: "Travel Buddy: Travel Mate Finder",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "A platform that connects like-minded travelers, enabling them to list their travel plans and find companions for sharing cabs, trains, or flights.",
+    technologies: ["EJS", "CSS", "Bootstrap", "JavaScript", "Node.js", "MongoDB"],
   },
   {
-    title: "Portfolio Website",
+    title: "Movie Recommendation System",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A user-friendly web app that recommends movies tailored to individual preferences through advanced content-based filtering techniques.",
+    technologies: ["python", "Machine Learning", "Vectorization", "Streamlit"],
   },
   {
-    title: "Blogging Platform",
+    title: "Notes Summarizer",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      " Django application that extracts text from uploaded PDFs using EasyOCR and summarizes it using the Llama3 8bAPI from Groq Cloud.",
+    technologies: ["Django", "EasyOCR", "Llama3 API", " Groq Cloud", "PDF generation"],
   },
+  {
+    title: "Fake News Detection System",
+    image: project5,
+    description:
+      "A small Flask application that uses a Python script and a personalized dataset to detect fake news from given text inputs.",
+    technologies: ["Python", "Flask", "Pandas", "Web Scrapping",  "Maltego"],
+  },
+  {
+    title: "To-Do List Application",
+    image: project6,
+    description:
+      "A simple and intuitive to-do list application that helps users manage tasks, set deadlines, and track progress efficiently.",
+    technologies: ["EJS", "CSS", "Node.js", "Express.js","Google-O-Auth",  "MYSQL"],
+  },
+
 ];
 
 export const CONTACT = {

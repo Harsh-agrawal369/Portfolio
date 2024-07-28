@@ -14,3 +14,12 @@
 .logo-font {
     font-family: 'Pacifico', cursive;
 }
+
+.font-body-text{
+    font-family: Monospace;
+    font-size: 1.15rem;
+}
+
+.font-fam{
+    font-family: monospace;
+}

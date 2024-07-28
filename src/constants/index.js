@@ -5,7 +5,7 @@ import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `Building the future, one line of code at a time. As a Software Engineering Student, I turn complex problems into elegant solutions, leveraging cutting-edge technologies and innovative thinking. Let's code the future together.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `Hola Amigo! I'm Harsh Agrawal, final year B.Tech Information Technology student at Vellore Institute of Technology.I am passionate about software engineering and have developed a strong skill set in both front-end and back-end technologies, like React, Node.js, MySQL, and MongoDB. Through internships and academic projects, I have gained hands-on experience and enjoy solving complex problems with innovative solutions. I also have a keen interest in artificial intelligence and machine learning, continuously exploring new advancements in these fields. With a commitment to excellence and a drive to make a meaningful impact, I am eager to contribute to the tech industry.`;
 
 export const EXPERIENCES = [
   {

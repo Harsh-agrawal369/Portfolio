@@ -52,14 +52,14 @@ const Contact = () => {
             Get In Touch
           </h1>
           <div className="h-1 bg-purple-600 w-14 mx-auto"></div>
-          <p className="text-gray-400 text-gray-300 text-base leading-6">
+          <p className="text-gray-400 text-gray-300 text-base leading-6 font-fam">
             {CONTACT.intro}
           </p>
         </div>
         <div className="grid grid-cols-1 lg-grid-cols-1 gap-6 mt-16">
           <div className="lg:col-span-2">
             <form onSubmit={sendEmail} ref={form}>
-              <div className="space-y-6">
+              <div className="space-y-6 font-fam">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <label className="sr-only">Name</label>
                   <input
@@ -100,7 +100,7 @@ const Contact = () => {
                 <div className="text-center">
                   <button
                     type="submit"
-                    className="inline-block px-5 py-2.5 rounded-md text-lg font-bold cursor-pointer select-none outline-none transition-all duration-500 focus:outline-none focus:ring-0 focus:ring-offset-0 hover:-translate-y-1.5 bg-purple-800 text-white-500 lg:w-1/6 sm:w-1/4"
+                    className="inline-block px-5 py-2.5 rounded-md text-xl font-bold cursor-pointer select-none font-fam outline-none transition-all duration-500 focus:outline-none focus:ring-0 focus:ring-offset-0 hover:-translate-y-1.5 bg-purple-800 text-white-500 lg:w-1/6 sm:w-1/4"
                   >
                     SEND
                   </button>

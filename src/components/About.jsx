@@ -32,13 +32,13 @@ const About = () => {
           className="w-full lg:w-1/2"
         >
           <div className="flex flex-col items-center lg:items-start">
-            <p className="my-2 max-w-xl py-6 text-justify">{ABOUT_TEXT}</p>
+            <p className="my-2 max-w-xl py-6 text-justify font-body-text">{ABOUT_TEXT}</p>
             <a
               href='https://drive.google.com/file/d/14Lo_OJEF1x2nImw6qoZla1kHMBhT7ivI/view?usp=sharing'
               download="Harsh_Agrawal_Resume.pdf"
               type="application/pdf"
               target="_blank"
-              className="mt-4 inline-block px-5 py-3 rounded-md bg-purple-800 text-white text-lg font-medium hover:bg-purple-600 transition-colors duration-300"
+              className="mt-4 inline-block px-5 py-3 rounded-md bg-purple-800 text-white text-lg font-medium hover:bg-purple-600 transition-colors duration-300 font-fam"
             >
               Download CV
             </a>

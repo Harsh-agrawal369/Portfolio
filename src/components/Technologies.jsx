@@ -1,4 +1,5 @@
-import { RiReactjsLine } from "react-icons/ri"
+import { RiReactjsLine} from "react-icons/ri"
+import { FaNodeJs } from "react-icons/fa";
 import {motion} from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -69,7 +70,7 @@ const Technologies = () => {
             initial = "initial"
             animate = "animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
-                <RiReactjsLine className="text-7xl text-cyan-400" />
+                <FaNodeJs className="text-7xl" />
             </motion.div>
         </motion.div>
     </div>

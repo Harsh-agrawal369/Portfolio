@@ -9,7 +9,6 @@ const container = (delay) => ({
 const Hero = () => {
     return (
         <div className="border-b border-neutral-900 pb-4 lg:mb-35 flex justify-center items-center">
-
             <div className="flex flex-wrap justify-center items-center text-center">
                 <div className="w-full lg:w-1/8">
                     <div className="flex flex-col items-center">
@@ -17,7 +16,7 @@ const Hero = () => {
                             variants={container(0.2)}
                             initial="hidden"
                             animate="visible"
-                            className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl ">
+                            className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl">
                             Harsh Agrawal
                         </motion.h1>
 
@@ -36,6 +35,9 @@ const Hero = () => {
                             className="my-2 max-w-4xl py-6 font-light">
                             {HERO_CONTENT}
                         </motion.p>
+
+                        {/* Empty div only visible on large screens */}
+                        <div className="hidden lg:block h-56 w-full"></div>
                     </div>
                 </div>
                 {/* <div className="w-full lg:w-1/2 lg:p-8">

@@ -70,6 +70,7 @@ const Contact = () => {
                     className="form-input"
                     placeholder="Enter your Name"
                     value={data.name}
+                    required
                   />
 
                   <label className="sr-only">Email</label>
@@ -81,6 +82,7 @@ const Contact = () => {
                     className="form-input"
                     placeholder="Enter your Email"
                     value={data.email}
+                    required
                   />
                 </div>
                 <label className="sr-only">Message</label>
@@ -92,6 +94,7 @@ const Contact = () => {
                   onChange={onChangeHandler}
                   rows="8"
                   value={data.message}
+                  required
                 />
 
                 <div className="text-center">

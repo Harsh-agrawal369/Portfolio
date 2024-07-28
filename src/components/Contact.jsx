@@ -44,6 +44,7 @@ const Contact = () => {
   };
 
   return (
+    
     <div className="py-16">
       <div className="max-w-6xl mx-auto p-4 md:p-16 xl:p-20">
         <div className="lg-w-2/3 space-y-5 text-center mx-auto">

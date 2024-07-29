@@ -7,7 +7,7 @@ import project6 from "../assets/projects/project-6.png";
 
 export const HERO_CONTENT = `Building the future, one line of code at a time. As a Software Engineering Student, I turn complex problems into elegant solutions, leveraging cutting-edge technologies and innovative thinking. Let's code the future together.`;
 
-export const ABOUT_TEXT = `Hola Amigo! I'm Harsh Agrawal, final year B.Tech Information Technology student at Vellore Institute of Technology.I am passionate about software engineering and have developed a strong skill set in both front-end and back-end technologies, like React, Node.js, MySQL, and MongoDB. Through internships and academic projects, I have gained hands-on experience and enjoy solving complex problems with innovative solutions. I also have a keen interest in artificial intelligence and machine learning, continuously exploring new advancements in these fields. With a commitment to excellence and a drive to make a meaningful impact, I am eager to contribute to the tech industry.`;
+export const ABOUT_TEXT = `Hola Amigo! I'm Harsh Agrawal, final year B.Tech Information Technology student at Vellore Institute of Technology. I am passionate about software engineering and have developed a strong skill set in both front-end and back-end technologies, like React, Node.js, MySQL, and MongoDB. Through internships and academic projects, I have gained hands-on experience and enjoy solving complex problems with innovative solutions. I also have a keen interest in artificial intelligence and machine learning, continuously exploring new advancements in these fields. With a commitment to excellence and a drive to make a meaningful impact, I am eager to contribute to the tech industry.`;
 
 export const EXPERIENCES = [
   {

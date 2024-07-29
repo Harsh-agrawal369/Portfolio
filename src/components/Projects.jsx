@@ -18,13 +18,13 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <div
             key={index}
-            className="mb-8 flex flex-wrap lg:justify-center font-body-text"
+            className="mb-8 flex flex-col lg:flex-row lg:justify-center items-center lg:items-start font-body-text"
           >
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
+              className="w-full lg:w-1/4 flex justify-center"
             >
               <img
                 src={project.image}
@@ -40,10 +40,10 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <div className="flex items-center mb-2">
-                <h6 className="font-semibold">{project.title}</h6>
-                <div className="ml-4">
-                  {(
+              <div className="flex flex-col lg:flex-row items-center lg:items-start mb-2">
+                <h6 className="font-semibold text-center lg:text-left">{project.title}</h6>
+                <div className="ml-0 lg:ml-4 mt-2 lg:mt-0 flex flex-wrap gap-2">
+                  {project.github && (
                     <a
                       href={project.github}
                       target="_blank"
@@ -58,7 +58,7 @@ const Projects = () => {
                       href={project.deployment}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="ml-4 text-blue-500 hover:underline"
+                      className="text-blue-500 hover:underline"
                     >
                       Deployment
                     </a>

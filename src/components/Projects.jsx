@@ -16,7 +16,10 @@ const Projects = () => {
 
       <div>
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center font-body-text">
+          <div
+            key={index}
+            className="mb-8 flex flex-wrap lg:justify-center font-body-text"
+          >
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
@@ -37,12 +40,38 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
-              <p className="mb-4 font-fam text-neutral-400 text-justify">{project.description }</p>
+              <div className="flex items-center mb-2">
+                <h6 className="font-semibold">{project.title}</h6>
+                <div className="ml-4">
+                  {(
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 hover:underline"
+                    >
+                      GitHub
+                    </a>
+                  )}
+                  {project.deployment && (
+                    <a
+                      href={project.deployment}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-4 text-blue-500 hover:underline"
+                    >
+                      Deployment
+                    </a>
+                  )}
+                </div>
+              </div>
+              <p className="mb-4 font-fam text-neutral-400 text-justify">
+                {project.description}
+              </p>
               <div className="flex flex-wrap">
-                {project.technologies.map((tech, index) => (
+                {project.technologies.map((tech, techIndex) => (
                   <span
-                    key={index}
+                    key={techIndex}
                     className="mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-skills font-medium text-purple-600"
                   >
                     {tech}

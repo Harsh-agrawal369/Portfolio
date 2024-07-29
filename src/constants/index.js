@@ -16,6 +16,8 @@ export const EXPERIENCES = [
     company: "Certainty Infotech Pvt. Ltd.",
     description: `Developed visually appealing and user-friendly static pages for a Bakery using React.js. Built a comprehensive authentication system with user login, password management, email reset, and Google OAuth integration. Utilized Node.js and MongoDB to create efficient APIs, enhancing system security and user satisfaction.`,
     technologies: ["Node.js", "React.js", "Javascript",  "mongoDB", "Prisma", "Docker"],
+    github: "https://github.com/user/project1",
+    deployment: "https://project1.example.com",
   },
   {
     year: "Apr 2023 - Mar 2024",
@@ -33,6 +35,7 @@ export const PROJECTS = [
     description:
       "A fully functional online food delivery website with features like food listing, shopping cart, payment gateway, and user authentication.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "Prisma", "JWT", "Stripe"],
+    github: "https://github.com/Harsh-agrawal369/BiteJoy---Food-Delivery"
   },
   {
     title: "Travel Buddy: Travel Mate Finder",
@@ -40,6 +43,8 @@ export const PROJECTS = [
     description:
       "A platform that connects like-minded travelers, enabling them to list their travel plans and find companions for sharing cabs, trains, or flights.",
     technologies: ["EJS", "CSS", "Bootstrap", "JavaScript", "Node.js", "MongoDB"],
+    github: "https://github.com/Harsh-agrawal369/TravelBuddyFinder-MVC",
+    deployment: "https://travelbuddyfinder.onrender.com/"
   },
   {
     title: "Movie Recommendation System",
@@ -47,6 +52,8 @@ export const PROJECTS = [
     description:
       "A user-friendly web app that recommends movies tailored to individual preferences through advanced content-based filtering techniques.",
     technologies: ["python", "Machine Learning", "Vectorization", "Streamlit"],
+    github: "https://github.com/Harsh-agrawal369/Movie_Recommendation",
+    deployment: "https://harsh-agrawal369-movie-recommendation-app-derhvx.streamlit.app/"
   },
   {
     title: "Notes Summarizer",
@@ -54,6 +61,7 @@ export const PROJECTS = [
     description:
       " Django application that extracts text from uploaded PDFs using EasyOCR and summarizes it using the Llama3 8bAPI from Groq Cloud.",
     technologies: ["Django", "EasyOCR", "Llama3 API", " Groq Cloud", "PDF generation"],
+    github: "https://github.com/Harsh-agrawal369/Notes-Summarizer/"
   },
   {
     title: "Fake News Detection System",
@@ -61,6 +69,7 @@ export const PROJECTS = [
     description:
       "A small Flask application that uses a Python script and a personalized dataset to detect fake news from given text inputs.",
     technologies: ["Python", "Flask", "Pandas", "Web Scrapping",  "Maltego"],
+    github: "https://github.com/Harsh-agrawal369/Fake-News-Detection-System"
   },
   {
     title: "To-Do List Application",
@@ -68,6 +77,8 @@ export const PROJECTS = [
     description:
       "A simple and intuitive to-do list application that helps users manage tasks, set deadlines, and track progress efficiently.",
     technologies: ["EJS", "CSS", "Node.js", "Express.js","Google-O-Auth",  "MYSQL"],
+    github: "https://github.com/Harsh-agrawal369/To-do",
+    deployment: "https://to-do-list-6thr.onrender.com/"
   },
 
 ];

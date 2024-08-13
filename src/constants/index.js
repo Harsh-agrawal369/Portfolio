@@ -35,7 +35,8 @@ export const PROJECTS = [
     description:
       "A fully functional online food delivery website with features like food listing, shopping cart, payment gateway, and user authentication.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "Prisma", "JWT", "Stripe"],
-    github: "https://github.com/Harsh-agrawal369/BiteJoy---Food-Delivery"
+    github: "https://github.com/Harsh-agrawal369/BiteJoy---Food-Delivery",
+    deployment: "https://bitejoy-frontend.onrender.com/"
   },
   {
     title: "Travel Buddy: Travel Mate Finder",

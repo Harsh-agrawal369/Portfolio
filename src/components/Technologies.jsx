@@ -15,12 +15,6 @@ const iconVariants = (duration) => ({
             repeat: Infinity,
             repeatType: "reverse",
         }
-    },
-    hover: {
-        y: 0,
-        transition: {
-            duration: 0.2,
-        }
     }
 });
 
@@ -63,17 +57,21 @@ const Technologies = () => {
                 transition={{ duration: 1 }}
                 className="mx-auto max-w-5xl flex flex-wrap items-center justify-center gap-4">
                 {skills.map((skill, index) => (
-                    <motion.div
-                        key={index}
-                        variants={iconVariants(2.5 + (index % 2) * 0.5)}
-                        initial="initial"
-                        animate="animate"
-                        whileHover="hover"
-                        className="group rounded-2xl border-4 border-neutral-800 p-4 text-center text-gray-100">
-                        <div className="group-hover:hidden">{skill.icon}</div>
-                        <p className="hidden group-hover:block text-2xl font-fam text-purple-300">{skill.icon}</p>
-                        <p className="hidden group-hover:block text-2xl font-fam text-purple-300">{skill.text}</p>
-                    </motion.div>
+                    <div key={index} className="flip-card w-32 h-32">
+                        <div className="flip-card-inner">
+                            <motion.div 
+                                className="flip-card-front flex items-center justify-center text-white"
+                                variants={iconVariants(2.5 + (index % 2) * 0.5)}
+                                initial="initial"
+                                animate="animate"
+                            >
+                                {skill.icon}
+                            </motion.div>
+                            <div className="flip-card-back flex items-center justify-center text-2xl font-fam text-purple-300">
+                                {skill.text}
+                            </div>
+                        </div>
+                    </div>
                 ))}
             </motion.div>
         </div>

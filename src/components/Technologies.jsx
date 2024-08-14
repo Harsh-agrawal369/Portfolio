@@ -24,7 +24,7 @@ const Technologies = () => {
         { icon: <MdJavascript className="text-7xl" />, text: "JavaScript" },
         { icon: <TbBrandCpp className="text-7xl" />, text: "C++" },
         { icon: <FaPython className="text-7xl" />, text: "Python" },
-        { icon: <SiRstudio className="text-7xl" />, text: "RStudio" },
+        { icon: <SiRstudio className="text-7xl" />, text: "R" },
         { icon: <RiReactjsLine className="text-7xl" />, text: "React" },
         { icon: <FaNodeJs className="text-7xl" />, text: "Node.js" },
         { icon: <FaHtml5 className="text-7xl" />, text: "HTML5" },

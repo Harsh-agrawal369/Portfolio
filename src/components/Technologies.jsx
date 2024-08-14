@@ -15,31 +15,37 @@ const iconVariants = (duration) => ({
             repeat: Infinity,
             repeatType: "reverse",
         }
+    },
+    hover: {
+        y: 0,
+        transition: {
+            duration: 0.2,
+        }
     }
 });
 
 const Technologies = () => {
     const skills = [
-        { icon: <FaJava className="text-7xl group-hover:hidden" />, text: "Java" },
-        { icon: <MdJavascript className="text-7xl group-hover:hidden" />, text: "JavaScript" },
-        { icon: <TbBrandCpp className="text-7xl group-hover:hidden" />, text: "C++" },
-        { icon: <FaPython className="text-7xl group-hover:hidden" />, text: "Python" },
-        { icon: <SiRstudio className="text-7xl group-hover:hidden" />, text: "RStudio" },
-        { icon: <RiReactjsLine className="text-7xl group-hover:hidden" />, text: "React" },
-        { icon: <FaNodeJs className="text-7xl group-hover:hidden" />, text: "Node.js" },
-        { icon: <FaHtml5 className="text-7xl group-hover:hidden" />, text: "HTML5" },
-        { icon: <FaCss3Alt className="text-7xl group-hover:hidden" />, text: "CSS3" },
-        { icon: <RiTailwindCssFill className="text-7xl group-hover:hidden" />, text: "Tailwind CSS" },
-        { icon: <SiStreamlit className="text-7xl group-hover:hidden" />, text: "Streamlit" },
-        { icon: <SiMysql className="text-7xl group-hover:hidden" />, text: "MySQL" },
-        { icon: <SiMongodb className="text-7xl group-hover:hidden" />, text: "MongoDB" },
-        { icon: <SiPrisma className="text-7xl group-hover:hidden" />, text: "Prisma" },
-        { icon: <SiNumpy className="text-7xl group-hover:hidden" />, text: "NumPy" },
-        { icon: <SiPandas className="text-7xl group-hover:hidden" />, text: "Pandas" },
-        { icon: <SiScikitlearn className="text-7xl group-hover:hidden" />, text: "Scikit-Learn" },
-        { icon: <FaGit className="text-7xl group-hover:hidden" />, text: "Git" },
-        { icon: <FaDocker className="text-7xl group-hover:hidden" />, text: "Docker" },
-        { icon: <FaAws className="text-7xl group-hover:hidden" />, text: "AWS" },
+        { icon: <FaJava className="text-7xl" />, text: "Java" },
+        { icon: <MdJavascript className="text-7xl" />, text: "JavaScript" },
+        { icon: <TbBrandCpp className="text-7xl" />, text: "C++" },
+        { icon: <FaPython className="text-7xl" />, text: "Python" },
+        { icon: <SiRstudio className="text-7xl" />, text: "RStudio" },
+        { icon: <RiReactjsLine className="text-7xl" />, text: "React" },
+        { icon: <FaNodeJs className="text-7xl" />, text: "Node.js" },
+        { icon: <FaHtml5 className="text-7xl" />, text: "HTML5" },
+        { icon: <FaCss3Alt className="text-7xl" />, text: "CSS3" },
+        { icon: <RiTailwindCssFill className="text-7xl" />, text: "Tailwind CSS" },
+        { icon: <SiStreamlit className="text-7xl" />, text: "Streamlit" },
+        { icon: <SiMysql className="text-7xl" />, text: "MySQL" },
+        { icon: <SiMongodb className="text-7xl" />, text: "MongoDB" },
+        { icon: <SiPrisma className="text-7xl" />, text: "Prisma" },
+        { icon: <SiNumpy className="text-7xl" />, text: "NumPy" },
+        { icon: <SiPandas className="text-7xl" />, text: "Pandas" },
+        { icon: <SiScikitlearn className="text-7xl" />, text: "Scikit-Learn" },
+        { icon: <FaGit className="text-7xl" />, text: "Git" },
+        { icon: <FaDocker className="text-7xl" />, text: "Docker" },
+        { icon: <FaAws className="text-7xl" />, text: "AWS" },
     ];
 
     return (
@@ -51,7 +57,6 @@ const Technologies = () => {
                 className="my-20 text-center text-4xl">
                 Technologies
             </motion.h1>
-
             <motion.div
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -100 }}
@@ -63,8 +68,10 @@ const Technologies = () => {
                         variants={iconVariants(2.5 + (index % 2) * 0.5)}
                         initial="initial"
                         animate="animate"
+                        whileHover="hover"
                         className="group rounded-2xl border-4 border-neutral-800 p-4 text-center text-gray-100">
-                        {skill.icon}
+                        <div className="group-hover:hidden">{skill.icon}</div>
+                        <p className="hidden group-hover:block text-2xl font-fam text-purple-300">{skill.icon}</p>
                         <p className="hidden group-hover:block text-2xl font-fam text-purple-300">{skill.text}</p>
                     </motion.div>
                 ))}

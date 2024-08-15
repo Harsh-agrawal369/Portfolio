@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import "../index.css";
 
 const Projects = () => {
+
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h1
@@ -46,8 +52,11 @@ const Projects = () => {
                   {project.github && (
                     <a
                       href={project.github}
-                      target="_blank"
                       rel="noopener noreferrer"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        openInNewTab(project.github);
+                      }}
                       className="text-blue-500 hover:underline"
                     >
                       GitHub
@@ -56,7 +65,10 @@ const Projects = () => {
                   {project.deployment && (
                     <a
                       href={project.deployment}
-                      target="_blank"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        openInNewTab(project.deployment);
+                      }}
                       rel="noopener noreferrer"
                       className="text-blue-500 hover:underline"
                     >

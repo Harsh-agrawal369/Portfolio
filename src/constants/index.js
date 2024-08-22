@@ -87,3 +87,21 @@ export const PROJECTS = [
 export const CONTACT = {
   intro : "I'd love to hear from you! Whether you have a question or just want to say hi.",   
 };
+
+export const CERTIFICATION = [
+  {
+    title: "Artificial Intelligence and Machine Learning",
+    certificate: "https://smartinternz.com/internships/google_developers/70de03c5509a35d2dc2d7038bf1f27d2",
+    issuer: "SmartInternz",
+  },
+  {
+    title: "Machine Learning with Python - IBM",
+    certificate: "https://www.coursera.org/account/accomplishments/verify/7RU8F4UDFH2C?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+    issuer: "Coursera",
+  },
+  {
+    title: "Ultimate AWS Developer Associate",
+    certificate: "https://www.udemy.com/certificate/UC-f61ed85e-4098-4b3a-8c89-905b6ef5e56d/",
+    issuer: "Udemy",
+  },
+];

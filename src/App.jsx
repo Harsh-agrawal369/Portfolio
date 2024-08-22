@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Certification from './components/Certification';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Experience />
         <Projects />
         < ToastContainer />
+        <Certification/>
         <Contact />
       </div>
       
